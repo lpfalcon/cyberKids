@@ -1,0 +1,114 @@
+{
+    "units": [
+        {
+            "id": 1,
+            "title": "Unit 1",
+            "description": "Learn the basics of Cyberbullying",
+            "courseId": 1,
+            "activeLesson": {
+                "id": 3
+            },
+            "activeLessonPercentage": 0.7,
+            "lessons": [
+                {
+                    "id": 1,
+                    "lessonId": 1,
+                    "order": 1,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?",
+                    "completed": true
+                },
+                {
+                    "id": 2,
+                    "lessonId": 1,
+                    "order": 2,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?",
+                    "completed": true
+                },
+                {
+                    "id": 3,
+                    "lessonId": 1,
+                    "order": 3,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 4,
+                    "lessonId": 1,
+                    "order": 4,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 5,
+                    "lessonId": 1,
+                    "order": 5,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 6,
+                    "lessonId": 1,
+                    "order": 6,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Unit 2",
+            "description": "How to Be a Good Digital Citizen?",
+            "courseId": 1,
+            "activeLesson": {
+                "id": 1
+            },
+            "activeLessonPercentage": 0.3,
+            "lessons": [
+                {
+                    "id": 1,
+                    "lessonId": 1,
+                    "order": 1,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 2,
+                    "lessonId": 1,
+                    "order": 2,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 3,
+                    "lessonId": 1,
+                    "order": 3,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 4,
+                    "lessonId": 1,
+                    "order": 4,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 5,
+                    "lessonId": 1,
+                    "order": 5,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                },
+                {
+                    "id": 6,
+                    "lessonId": 1,
+                    "order": 6,
+                    "type": "SELECT",
+                    "question": "What is the best definition of cyberbullying?"
+                }
+            ]
+        }
+    ]
+}

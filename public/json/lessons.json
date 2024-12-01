@@ -1,0 +1,14 @@
+{
+    "id": 1,
+    "challenges": [
+        {
+            "id": 1,
+            "completed": true
+        },
+        {
+            "id": 2,
+            "completed": false
+        }
+    ],
+    "lessonPercentage":0.5
+}
