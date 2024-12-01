@@ -1,0 +1,34 @@
+{
+    "courses": [
+        {
+            "id":1,
+            "title": "Cyberbullying Crusaders",
+            "image": "/cyberbully.svg"
+        },
+        {
+            "id":2,
+            "title": "Internet Safety Detectives",
+            "image": "/badguy.svg"
+        },
+        {
+            "id":3,
+            "title": "Password Pirates",
+            "image": "/sickComputer.svg"
+        },
+        {
+            "id":4,
+            "title": "Phishing Phantoms",
+            "image": "/hacker.svg"
+        },
+        {
+            "id":5,
+            "title": "Digital Detectives",
+            "image": "/worn.svg"
+        },
+        {
+            "id":6,
+            "title": "The Online World of Wonder and Warning",
+            "image": "/virus.svg"
+        }
+    ]
+}
