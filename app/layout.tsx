@@ -21,7 +21,7 @@ export default function RootLayout({
     <ClerkProvider>
 
       <html lang="en">
-        <body>
+        <body className={font.className}>
           <ExitModal />
           {children}
         </body>

@@ -48,7 +48,7 @@ export const LessonButton = ({
 
     if (isCompleted) {
         Icon = Check;
-        href = `/lesson/${id}`;
+        href = `/lesson`; //lesson/${id}
     }
 
     if (isLast) {
@@ -77,7 +77,7 @@ export const LessonButton = ({
                                     <div className="absolute -top-10 left-3.5 px-3 py-2.5
                                     border-2 font-bold uppercase bg-white
                                     rounded-xl animate-bounce tracking-wide z-10">
-                                        <span className="google-header">Start </span>
+                                        <span className="google-header font-extrabold">Start </span>
                                         <div className="absolute left-1/2 -bottom-2
                                     w-0 h-0 border-x-8 border-x-transparent 
                                     border-t-8 transform -translate-x-1/2" />

@@ -30,7 +30,7 @@ export const UnitBanner = ({ title, description }: Props) => {
               active:border-b-2"
                 >
                     <NotebookText />
-                   <span className="google-header"> CONTINUE </span> 
+                   <span className="google-header font-extrabold"> CONTINUE </span> 
                 </Button>
             </Link>
 

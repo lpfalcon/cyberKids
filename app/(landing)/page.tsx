@@ -23,9 +23,9 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center gap-y-8">
 
-        <h1 className="text-xl lg:text-3xl font-bold 
+        <h1 className="text-xl lg:text-3xl font-extrabold
         google-header max-w-[480px] text-center">
-          Let's help Lore defeat cybercriminals with CyberKids!
+          Let&apos;s help Lore defeat cybercriminals with CyberKids!
         </h1>
 
         <div className="flex flex-col items-center
