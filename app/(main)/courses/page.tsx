@@ -3,8 +3,8 @@ import { List } from "./list";
 
 const CoursesPage = async () => {
 
-    const urls = [`${process.env.PUBLIC_URL}/json/courses.json`,
-    `${process.env.PUBLIC_URL}/json/userProgress.json`
+    const urls = [`${process.env.NEXT_PUBLIC_URL}/json/courses.json`,
+    `${process.env.NEXT_PUBLIC_URL}/json/userProgress.json`
     ]
 
     const [

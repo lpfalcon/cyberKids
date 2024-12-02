@@ -2,8 +2,8 @@ import { severalQueries } from "@/db/queries";
 import Quiz from "./quiz";
 
  const LessonPage = async() => {
-    const urls = [`${process.env.PUBLIC_URL}/json/lessons.json`,
-        `${process.env.PUBLIC_URL}/json/userProgress.json`
+    const urls = [`${process.env.NEXT_PUBLIC_URL}/json/lessons.json`,
+        `${process.env.NEXT_PUBLIC_URL}/json/userProgress.json`
         ]
     
         const [

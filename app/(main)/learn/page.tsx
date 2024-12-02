@@ -8,7 +8,7 @@ import { UnitSquema } from "@/db/squemas";
 
 const LearnPage = async () => {
 
-    const { units } = await get(`${process.env.PUBLIC_URL}/json/units.json`)
+    const { units } = await get(`${process.env.NEXT_PUBLIC_URL}/json/units.json`)
     return (
         <div className="flex gap-[48px] px-6">
 
