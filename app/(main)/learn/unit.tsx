@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { UnitSquema } from "@/db/squemas";
 import { UnitBanner } from "./unit-banner";
 import { LessonButton } from "./lesson-button";

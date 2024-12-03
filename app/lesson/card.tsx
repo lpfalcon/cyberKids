@@ -22,14 +22,15 @@ export const Card = ({
     disabled,
     selected
 }: Props) => {
+
     return (
 
         <div
-            onClick={() => { }}
+            onClick={onClick}
             className={cn(
                 `h-full border-2 rounded-xl border-b-4 
-            hover:bg-black/5 p-4 lg:p-6 cursor-pointer
-            active:border-b-2
+            hover:bg-black/5  cursor-pointer
+            active:border-b-2 max-w-[300px] 
             `,
                 selected && "border-sky-300 bg-sky-100 hover:bg-sky-100",
                 selected && status === "correct" && "border-green-300 bg-green-100 hover:bg-green-100",
@@ -43,12 +44,17 @@ export const Card = ({
                     <Image
                         object-fit="cover"
                         src={imageSrc}
+                        className="rounded-t-xl"
                         alt="image"
-                        width={200}
+                        width={300}
                         height={300}
                     />
                 </div>
             )}
+
+            <p className="p-4 text-wrap">
+                {text}
+            </p>
         </div>
 
     );

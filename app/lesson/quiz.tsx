@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 'use client';
 
 import { useState } from "react";
@@ -20,7 +20,7 @@ const Quiz = ({
     initialPercentage,
     userSubscription
 }: Props) => {
-
+    const [status, setStatus] = useState<"correct" | "wrong" | "none">('none');
     const [hearts, setHearts] = useState(initialHearts);
     const [percentage, setPercentage] = useState(initialPercentage);
     const [challenges] = useState(initialLessonChallenges)
@@ -30,8 +30,13 @@ const Quiz = ({
         return uncompletedIdex === -1 ? 0 : uncompletedIdex;
     })
 
+    const [selectedOption, setSelectedOption] = useState<number>();
     const { title, challengeOptions } = challenges[activeIndex];
 
+    const onSelect = (id: number) => {
+        if (status !== "none") return
+        setSelectedOption(id);
+    }
     return (
         <>
             <Header
@@ -41,7 +46,7 @@ const Quiz = ({
             />
             <div className="flex-1">
                 <div className="h-full flex items-center justify-center">
-                    <div className="lg:min-h-[350px] lg:min-w-[600px] w-full 
+                    <div className="lg:min-h-[350px]  w-full 
                     px-6 lg:px-0 flex flex-col gap-y-10  items-center">
                         <Image
                             className="text-center"
@@ -54,11 +59,12 @@ const Quiz = ({
                         text-center font-extrabold">
                             {title}
                         </h1>
-                            <Challenge
-                                options={challengeOptions || []}
-                                onSelect={() => { }}
-                                selectedOption={undefined}
-                            />
+                        <Challenge
+                            status={ status}
+                            options={challengeOptions || []}
+                            onSelect={onSelect}
+                            selectedOption={selectedOption}
+                        />
 
                     </div>
                 </div>

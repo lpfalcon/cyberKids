@@ -5,6 +5,9 @@ import { UserProgress } from "@/components/learn/user-progress";
 import { get } from "@/db/queries";
 import { Unit } from "./unit";
 import { UnitSquema } from "@/db/squemas";
+import { Trophy } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const LearnPage = async () => {
 
@@ -47,6 +50,38 @@ const LearnPage = async () => {
                     points={100}
                     hasActiveSubcription={false}
                 />
+
+                <div className="mb-10 mt-10 border-2 rounded-xl border-b-4 
+            hover:bg-black/5  cursor-pointer active:border-b-2 w-full p-4
+            flex flex-col items-center">
+                    <h1 className="text-xl font-extrabold google-header text-center">
+                        The monthly challenges are about to begin!
+                    </h1>
+                    <p className="text-lg font-semibold mt-3 text-center">
+                        Complete each month's challenge and earn exclusive medals.
+                    </p>
+                    <Trophy
+                        style={{ width: "100px", height: " 100px" }}
+                        className="fill-orange-400 stroke-orange-400 text-orange-400" />
+                </div>
+
+                <div className="mb-10 mt-10 border-2 rounded-xl border-b-4 
+            hover:bg-black/5  cursor-pointer active:border-b-2 w-full p-4
+            flex flex-col items-center">
+                    <h1 className="text-xl font-extrabold google-header text-center">
+                        Finish a lesson to enter this week's challenge.
+                    </h1>
+                    <Button
+                        size="lg"
+                        variant="primary"
+                        className="w-full mt-2"
+                        asChild>
+                        <Link href="/courses">
+                            Continue Learning
+                        </Link>
+                    </Button>
+
+                </div>
             </StickyWrapper>
 
         </div>
