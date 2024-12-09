@@ -1,10 +1,11 @@
 'use client'
 
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { useChat } from 'ai/react';
-import { Loader } from "lucide-react";
+import { AlertCircle, Loader } from "lucide-react";
 import Image from "next/image";
 
 
@@ -14,7 +15,8 @@ const ChatView = () => {
         messages, input,
         handleInputChange,
         handleSubmit,
-        isLoading, stop } = useChat({});
+        isLoading, stop,
+        error, reload } = useChat({});
 
     return (
         <div className="flex flex-col h-[600px] max-w-md mx-auto border rounded-lg overflow-hidden">
@@ -48,12 +50,27 @@ const ChatView = () => {
                     </div>
                 ))}
                 {isLoading && (
-                    <div>
-                        <Loader className="h-6 w-6 text-muted-foreground animate-spin" />
+                    <div className="w-full flex flex-col items-center">
+                        <Loader className="text-muted-foreground animate-spin m-4" />
                         <Button type="button" onClick={() => stop()}>
                             Stop
                         </Button>
                     </div>
+                )}
+                {error && (
+                    <>
+                        <Alert variant="destructive">
+                            <AlertCircle className="h-4 w-4" />
+                            <AlertTitle>Error</AlertTitle>
+                            <AlertDescription className="flex justify-between items-center">
+                                An error occurred.
+                                <Button type="button" onClick={() => reload()}>
+                                    Retry
+                                </Button>
+                            </AlertDescription>
+                        </Alert>
+
+                    </>
                 )}
 
             </ScrollArea>
