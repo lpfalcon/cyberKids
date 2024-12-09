@@ -42,8 +42,8 @@ export const Sidebar = ({ className }: Props) => {
             href: "/shop"
         },
         {
-            iconSrc: "/chat.svg",
-            label: "Chat",
+            iconSrc: "/cyberbot.svg",
+            label: "CyberBuddy",
             href: "/chat"
         },
 

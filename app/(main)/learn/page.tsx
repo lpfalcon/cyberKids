@@ -5,9 +5,9 @@ import { UserProgress } from "@/components/learn/user-progress";
 import { get } from "@/db/queries";
 import { Unit } from "./unit";
 import { UnitSquema } from "@/db/squemas";
-import { Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 
 const LearnPage = async () => {
 
@@ -60,9 +60,11 @@ const LearnPage = async () => {
                     <p className="text-lg font-semibold mt-3 text-center">
                         Complete each month's challenge and earn exclusive medals.
                     </p>
-                    <Trophy
-                        style={{ width: "100px", height: " 100px" }}
-                        className="fill-orange-400 stroke-orange-400 text-orange-400" />
+                    <Image
+                        src="/trophy.svg"
+                        alt="trophy"
+                        height={100}
+                        width={100} />
                 </div>
 
                 <div className="mb-10 mt-10 border-2 rounded-xl border-b-4 
