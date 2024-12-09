@@ -28,9 +28,10 @@ export const Card = ({
         <div
             onClick={onClick}
             className={cn(
-                `h-full border-2 rounded-xl border-b-4 
+                `border-2 rounded-xl border-b-4 
             hover:bg-black/5  cursor-pointer
             active:border-b-2 max-w-[300px] 
+            m-4
             `,
                 selected && "border-sky-300 bg-sky-100 hover:bg-sky-100",
                 selected && status === "correct" && "border-green-300 bg-green-100 hover:bg-green-100",
@@ -39,12 +40,10 @@ export const Card = ({
             )}
         >
             {imageSrc && (
-                <div className="relative aspect-square mb-4
-                max-h-[150px] w-full flex justify-center">
+                <div className="relative mb-4  w-full flex justify-center">
                     <Image
-                        object-fit="cover"
                         src={imageSrc}
-                        className="rounded-t-xl"
+                        className="rounded-t-xl object-contain"
                         alt="image"
                         width={300}
                         height={300}
